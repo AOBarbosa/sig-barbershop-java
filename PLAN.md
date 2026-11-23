@@ -3,6 +3,23 @@
 Planejamento para virar **issues no GitHub**. Cada item `### [ID]` abaixo é uma issue.
 Detalhes técnicos (inventário de endpoints, regras, formatos, decisões) estão em [`docs/MIGRATION_PLAN.md`](docs/MIGRATION_PLAN.md); as issues referenciam suas seções (ex.: "MP §4").
 
+## Issues no GitHub
+Criadas em 23/11/2026: um **épico por etapa** com as tarefas como **sub-issues**.
+
+| Etapa | Épico | Tarefas (ID → issue) |
+|---|---|---|
+| 1 | #1 | E1-1 #2 · E1-2 #3 · E1-3 #4 · E1-4 #5 |
+| 2 | #6 | E2-10 #7 · E2-1 #8 · E2-2 #9 · E2-3 #10 · E2-6 #11 · E2-4 #12 · E2-5 #13 · E2-7 #14 · E2-8 #15 · E2-9 #16 |
+| 3 | #17 | E3-1 #18 · E3-2 #19 · E3-3 #20 · E3-4 #21 |
+| 4 | #22 | E4a #23 · E4b #24 · E4c #25 · E4d #26 · E4e #27 · E4f #28 |
+| 5 | #29 | E5-1 #30 · E5-4 #31 · E5-2 #32 · E5-3 #33 · E5-5 #34 |
+| 6 | #35 | E6-1 #36 · E6-2 #37 · E6-3 #38 |
+| 7 | #39 | E7-1 #40 · E7-2 #41 · E7-3 #42 · E7-4 #43 |
+| 8 | #44 | E8-1 #45 · E8-3 #46 · E8-2 #47 · E8-4 #48 |
+| 9 | #49 | E9-1 #50 · E9-2 #51 · E9-3 #52 · E9-4 #53 |
+
+Podem começar em paralelo, sem depender do domínio: **E5-1 (#30, JSON)** e **E6-1 (#36, compatibilidade OpenJML — maior risco da entrega)**.
+
 ## Contexto em 5 linhas
 - Migração do backend `api/` do sig-barbershop (FastAPI + MySQL) para **Java 17 puro** (sem frameworks), para a disciplina *Lógica Aplicada à Engenharia de Software*.
 - Regras de negócio especificadas com **JML** e verificadas com **OpenJML** (ESC estático + RAC em runtime).

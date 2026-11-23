@@ -1,0 +1,27 @@
+# Maven
+target/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# OpenJML / verification outputs (logs are kept only via .gitkeep)
+docs/verification/logs/*
+!docs/verification/logs/.gitkeep
+*.rac.class
+
+# Delivery package
+dist/
+*.zip

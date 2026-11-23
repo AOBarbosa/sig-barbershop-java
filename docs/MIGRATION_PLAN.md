@@ -8,7 +8,7 @@
 | Etapa | Descrição | Status |
 |---|---|---|
 | 0 | Análise (este documento) | ✅ concluída (aguardando aprovação) |
-| 1 | Esqueleto (pom, pacotes, config, `TransactionRunner`) | ⏳ |
+| 1 | Esqueleto (pom, pacotes, config, `TransactionRunner`) | 🟡 estrutura criada (pom, pacotes, README, db/, placeholder OpenJML, `docs/jml-guidelines.md`); falta `Config` e `TransactionRunner` |
 | 2 | Núcleo de domínio puro com JML | ⏳ |
 | 3 | Repositórios em memória + suíte abstrata de contratos | ⏳ |
 | 4 | Serviços (4a…4f, por módulo) | ⏳ |
@@ -467,5 +467,6 @@ Os testes Cypress do frontend (13 specs) mockam a API com `cy.intercept()`. Serv
 ## 13. Pendências desta etapa
 - O diretório `sig-babershop-java` **não é repositório git**: não houve commit. Confirmar se deve ser criado (`git init` + remoto no GitHub para as issues do `PLAN.md`).
 - Respostas às decisões do §10 (itens 4, 5, 6 e sub-decisões do P3) e aos achados N1–N9 do §9.
-- Planilha de quantitativos e orientações JML da disciplina (placeholders do prompt).
-- Sistema operacional do computador da apresentação (scripts `.bat`?).
+- Planilha de quantitativos (placeholder do prompt).
+- ~~Orientações JML da disciplina~~ → recebidas (Aula 18) e consolidadas em [`docs/jml-guidelines.md`](jml-guidelines.md). Impactos no plano: `\sum`/`\numof` **não** são suportados pelo ESC (totais via acumulador + `maintaining` ou `ghost`); interfaces de repositório especificadas com **model fields** + `represents`; padrão `non_null`; aritmética *safe* exige limites de overflow nos `long` de dinheiro.
+- ~~Scripts `.bat`~~ → desnecessários: o OpenJML só roda em macOS/Linux (Windows apenas via WSL), então a demonstração usa os scripts `.sh`.
